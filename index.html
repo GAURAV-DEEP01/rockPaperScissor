@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS</title>
+    <link rel="stylesheet" href="rps.css">
+    <script src="https://kit.fontawesome.com/6796103e8a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="scoresection">
+            <div class="scoretable">
+                <ul>
+                    <table>
+                        <tr>
+                        <div class="tablehead">
+                                <th> YOU </th>
+                                <th> BOT </th>
+                        </div>
+                        </tr>
+                        <tr>
+                            <div class="scoredata">
+                                <td id="playerScoreCount">0</td>
+                                <td id="botScoreCount">0</td>
+                            </div>
+                        </tr>
+                    </table>
+                </ul>
+            </div>
+            <div class="resetbtndiv"><button class="resetbtn">Reset</button></div>
+        </div>
+        <div class="gamesection">
+            <div class="reswrapper">
+                <div class="gameresult"><p>PLAY</p></div>
+                <div class="botresult"><p>Bot is sleeping...</p></div>
+            </div>
+            <div class="btnwraper">
+                <button class="gamebtn" id="rk"><i class="fa-regular fa-hand-back-fist" style="color: #212121;"></i></button>
+                <button class="gamebtn" id="ppr"><i class="fa-regular fa-hand" style="color: #212121;"></i></button>    
+                <button class="gamebtn" id="scr"><i class="fa-regular fa-hand-scissors" style="color: #212121;"></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="rps.js"></script>
+    
+</body>
+</html>
