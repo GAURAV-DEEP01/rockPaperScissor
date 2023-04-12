@@ -53,6 +53,9 @@ p{
 .botresult{
     font-size: 30px;
 }
+.reswrapper{
+    height: 220px;
+}
 .gamebtn{
     background-color:#00f7ff;
     width: 120px;
