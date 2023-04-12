@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Sigmar+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+    
+}.container{
+    display: flex;
+    height: auto;
+}
+body {
+    background-image: linear-gradient(to right,#33d4f8,#63c4fd);
+  }
+.gamesection{
+    flex-basis: 80%;
+}
+.scoresection{
+    flex-basis: 20%;
+    margin: auto;
+    margin-top: 40px;
+    margin-left: 20px;
+    font-size: 30px;
+}
+.scoretable{
+    display: flex;
+    justify-content: center;
+}
+th,td{
+    padding: 25px;
+    text-align: center;
+    border-radius: 7px;
+}
+.btnwraper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    height: 60vh;
+}
+p{
+    margin: 0%;
+}
+.gameresult,.botresult{
+ display: flex;
+ justify-content: center;
+ margin: 30px;
+}
+.gameresult{
+    font-size: 40px;
+}
+.botresult{
+    font-size: 30px;
+}
+.gamebtn{
+    background-color:#00f7ff;
+    width: 120px;
+    min-width: 30px;
+    height: 70px;
+    border: none;
+    border-radius: 7px;
+    font-size: 40px
+}
+.resetbtn{
+    padding: 10px;
+    background-color:#00f7ff;
+    width: 100%;
+    margin-top: 10px;
+    height: 70px;
+    border: none;
+    border-radius: 7px;
+    font-size: 25px
+    
+}
+.resetbtndiv
+{
+    display:flex;
+    justify-content: center;
+}
+@media (max-width:700px) {
+    .gamesection{
+        flex-basis: 90%;
+        margin-right:15px;
+    }
+    .scoresection{
+        margin-top: 20px;
+        margin-left: 5px;
+        padding: 10px;
+        flex-basis: 10%;
+        margin-right: 0%;
+    }
+    ul{
+        padding: 0%;
+    }
+    th,td{
+        padding: 10px;
+    }
+    .gamebtn{
+        width: 65px;
+        height: 65px;
+        font-size: 25px
+    }
+    .resetbtn{
+        padding: 10px;
+        background-color:#00f7ff;
+        width: 120px;
+        height: 70px;
+        border: none;
+        border-radius: 7px;
+        font-size: 25px
+    }
+    .scoresection{
+        font-size: 18px;
+    }
+    .gameresult{
+        font-size: 30px;
+    }
+    .botresult{
+        font-size: 20px;
+    }
+}
