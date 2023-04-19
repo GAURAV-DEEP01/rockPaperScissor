@@ -147,8 +147,5 @@ function resetFn(){
     dispGamRes.style.backgroundColor = '#ffffff00';
     dispGamRes.innerHTML="PLAY";
     dispBotRes.innerHTML="Bot is sleeping..."
+    handicon.removeChild(icon);
 }
-
-    
-    
-    
