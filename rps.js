@@ -144,6 +144,7 @@ function resetFn(){
     botScoreCounter.innerHTML = 0;
     playerScoreCounter.style.backgroundColor = '#ffffff00';
     botScoreCounter.style.backgroundColor = '#ffffff00';
+    dispGamRes.style.backgroundColor = '#ffffff00';
     dispGamRes.innerHTML="PLAY";
     dispBotRes.innerHTML="Bot is sleeping..."
 }
