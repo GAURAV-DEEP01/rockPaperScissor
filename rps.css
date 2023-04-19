@@ -49,9 +49,6 @@ p{
 }
 .gameresult{
     font-size: 40px;
-    border: solid 1px;
-    border-radius: 7px;
-    border-color: #ffffff00;
 }
 .botresult{
     font-size: 30px;
