@@ -11,7 +11,7 @@
     height: auto;
 }
 body {
-    background-image: linear-gradient(to right,#33d4f8,#63c4fd);
+    background-color:#00D9C0
   }
 .gamesection{
     flex-basis: 80%;
@@ -42,7 +42,7 @@ th,td{
 p{
     margin: 0%;
 }
-.gameresult,.botresult{
+.gameresult,.botresult,.handicon{
  display: flex;
  justify-content: center;
  margin: 30px;
@@ -53,11 +53,15 @@ p{
 .botresult{
     font-size: 30px;
 }
+.handicon{
+    font-size: 35px;
+}
 .reswrapper{
     height: 220px;
 }
 .gamebtn{
-    background-color:#00f7ff;
+    background-color:#FFFFF3
+;
     width: 120px;
     min-width: 30px;
     height: 70px;
@@ -67,7 +71,9 @@ p{
 }
 .resetbtn{
     padding: 10px;
-    background-color:#00f7ff;
+    background-color:
+#FFFFF3
+;
     width: 100%;
     margin-top: 10px;
     height: 70px;
@@ -106,7 +112,9 @@ p{
     }
     .resetbtn{
         padding: 10px;
-        background-color:#00f7ff;
+        background-color:
+#FFFFF3
+;
         width: 120px;
         height: 70px;
         border: none;
