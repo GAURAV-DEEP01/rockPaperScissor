@@ -49,6 +49,7 @@ p{
 }
 .gameresult{
     font-size: 40px;
+    border-radius: 7px;
 }
 .botresult{
     font-size: 30px;
