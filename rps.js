@@ -71,7 +71,6 @@ function botChoice(){
 }
 function playerPoint(){
     dispGamRes.innerHTML="You Win!";
-    dispGamRes.style.borderColor = 'green';
     dispGamRes.style.backgroundColor = '#7dfa61';
     playerScoreIncrement++;
     playerScoreCounter.innerHTML = playerScoreIncrement;
@@ -80,7 +79,6 @@ function playerPoint(){
 }
 function botPoint(){
     dispGamRes.innerHTML="You Lost";
-    dispGamRes.style.borderColor = 'red';
     dispGamRes.style.backgroundColor = '#f9604c';
     botScoreIncrement++;
     botScoreCounter.innerHTML= botScoreIncrement;
@@ -120,7 +118,6 @@ function gamelogic(){
     if(gameval==finalbotval)
     {
         dispGamRes.innerHTML="It's a Tie";
-        dispGamRes.style.borderColor = 'yellow';
         dispGamRes.style.backgroundColor = '#e8e853';
         botChoice()
     }
