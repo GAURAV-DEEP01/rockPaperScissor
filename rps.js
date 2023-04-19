@@ -6,6 +6,9 @@ dispBotRes=document.querySelector(".botresult")
 playerScoreCounter=document.querySelector("#playerScoreCount")
 botScoreCounter=document.querySelector("#botScoreCount")
 resetgamebtn=document.querySelector(".resetbtn")
+handicon=document.querySelector(".handicon")
+icon = document.createElement("i");
+
 //event space
 rockbtn.addEventListener("click",rockclick);
 paperbtn.addEventListener("click",paperclick);
@@ -38,19 +41,33 @@ function botvalgen(){
     console.log(botval)
     return botval
 }
+let botIconValue;
+function addicon(){ 
+    icon.setAttribute("class", botIconValue);
+    handicon.appendChild(icon);
+}
 function botChoice(){
     switch(finalbotval)
     {
-        case 1 : botChoiceValue ="Rock"
+        case 1: botChoiceValue ="Rock"
+                botIconValue="fa-regular fa-hand-back-fist"
+                addicon()
                 break;
-        case 2 : botChoiceValue ="Paper"
+        case 2: botChoiceValue ="Paper"
+                botIconValue="fa-regular fa-hand"
+                addicon()
                 break
-        case 3 : botChoiceValue ="Scissors"
+        case 3: botChoiceValue ="Scissors"
+                botIconValue="fa-regular fa-hand-scissors"
+                addicon()
                 break
         default: none;
     }
-    console.log(botChoiceValue);
+    if(finalbotval==gameval){
+        dispBotRes.innerHTML="Bot chose the same!";
+    }else{
     dispBotRes.innerHTML="Bot chose "+botChoiceValue;
+    }
 }
 function playerPoint(){
     dispGamRes.innerHTML="You Win!";
@@ -98,7 +115,7 @@ function gamelogic(){
     if(gameval==finalbotval)
     {
         dispGamRes.innerHTML="It's a Tie";
-        dispBotRes.innerHTML="Bot chose the same!";
+        botChoice()
     }
     
     if(playerScoreIncrement>botScoreIncrement)
