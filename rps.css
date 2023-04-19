@@ -49,12 +49,16 @@ p{
 }
 .gameresult{
     font-size: 40px;
+    border: solid 1px;
+    border-radius: 7px;
+    border-color: #ffffff00;
+    background-color: #f9604c;
 }
 .botresult{
     font-size: 30px;
 }
 .handicon{
-    font-size: 35px;
+    font-size: 40px;
 }
 .reswrapper{
     height: 220px;
