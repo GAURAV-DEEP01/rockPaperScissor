@@ -143,3 +143,7 @@ function resetFn(){
     dispGamRes.innerHTML="PLAY";
     dispBotRes.innerHTML="Bot is sleeping..."
 }
+
+    
+    
+    
