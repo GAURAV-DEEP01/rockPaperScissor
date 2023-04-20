@@ -37,7 +37,7 @@ th,td{
     align-items: center;
     justify-content: space-around;
     margin: auto;
-    height: 60vh;
+    margin-top: 30vh;
 }
 p{
     margin: 0%;
@@ -102,7 +102,7 @@ button:focus {
     display: flex;
     flex-direction: column;
 }
-.nextProject{
+.nextProject,.themeColour{
     width: 100%;
     text-align: center;
     font-size: 17px;
@@ -112,6 +112,24 @@ button:focus {
     border: none;
     padding: 8px;
     text-decoration: none;
+}
+.themeColour{
+    margin-top:30px;
+}
+#themeIcon{
+    padding-left: 10px;
+}
+.luckFacts{
+    margin: 15px;
+    padding: 20px;
+    background-color:#FFFFF3 ;
+    border-radius: 7px;
+}
+.luckFactsBtn{
+    margin-top: 8px;
+    padding: 5px;
+    background-color:#d2d2d2 ;
+    border-radius: 7px;
 }
 
 @media (max-width:700px) {
