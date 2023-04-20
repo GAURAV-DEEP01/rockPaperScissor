@@ -3,6 +3,7 @@ paperbtn=document.querySelector("#ppr")
 scissorbtn=document.querySelector("#scr")
 dispGamRes=document.querySelector(".gameresult")
 dispBotRes=document.querySelector(".botresult")
+nextProject=document.querySelector(".nextProject")//useless
 playerScoreCounter=document.querySelector("#playerScoreCount")
 botScoreCounter=document.querySelector("#botScoreCount")
 resetgamebtn=document.querySelector(".resetbtn")
@@ -19,6 +20,7 @@ let playerScoreIncrement = 0;
 let botScoreIncrement = 0;
 let gameval;
 var finalbotval;
+let botIconValue;
 function rockclick(){
     gameval=1
     finalbotval = botvalgen();
@@ -41,24 +43,24 @@ function botvalgen(){
     console.log(botval)
     return botval
 }
-let botIconValue;
 function addicon(){ 
     icon.setAttribute("class", botIconValue);
     handicon.appendChild(icon);
 }
+
 function botChoice(){
     switch(finalbotval)
     {
         case 1: botChoiceValue ="Rock"
-                botIconValue="fa-regular fa-hand-back-fist"
+                botIconValue="fa-sharp fa-solid fa-hand-back-fist"
                 addicon()
                 break;
         case 2: botChoiceValue ="Paper"
-                botIconValue="fa-regular fa-hand"
+                botIconValue="fa-sharp fa-solid fa-hand"
                 addicon()
                 break
         case 3: botChoiceValue ="Scissors"
-                botIconValue="fa-regular fa-hand-scissors"
+                botIconValue="fa-sharp fa-solid fa-hand-scissors"
                 addicon()
                 break
         default: none;
