@@ -131,6 +131,10 @@ button:focus {
     background-color:#d2d2d2 ;
     border-radius: 7px;
 }
+.facts{
+    font-size: 13px;
+    color: #676767;
+}
 
 @media (max-width:700px) {
     .gamesection{
