@@ -1,9 +1,13 @@
+
 rockbtn=document.querySelector("#rk")
 paperbtn=document.querySelector("#ppr")
 scissorbtn=document.querySelector("#scr")
 dispGamRes=document.querySelector(".gameresult")
 dispBotRes=document.querySelector(".botresult")
-nextProject=document.querySelector(".nextProject")//useless
+luckFact=document.querySelector(".luckFacts")
+luckFactPara=document.querySelector(".luckFactsPara")
+themeColor=document.querySelector(".themeColour")//useless
+body=document.querySelector("body")
 playerScoreCounter=document.querySelector("#playerScoreCount")
 botScoreCounter=document.querySelector("#botScoreCount")
 resetgamebtn=document.querySelector(".resetbtn")
@@ -15,12 +19,69 @@ rockbtn.addEventListener("click",rockclick);
 paperbtn.addEventListener("click",paperclick);
 scissorbtn.addEventListener("click",scissorclick);
 resetgamebtn.addEventListener("click",resetFn)
+themeColor.addEventListener("click",changeTheme)
+
 let botChoiceValue;
 let playerScoreIncrement = 0;
 let botScoreIncrement = 0;
 let gameval;
 var finalbotval;
 let botIconValue;
+let themeColourIncrement = 0;
+let themeColours = ["#FFEECF","#FF9FE5","#FF858D","#00D9C0","#9A8873","#77BA99"];
+let luckFactArray = [
+    "In Japan, the number 4 is considered unlucky because it is pronounced similarly to the word for death.",
+    "In Chinese culture, the number 8 is considered lucky because it sounds like the word for wealth or fortune.",
+    "The horseshoe is a symbol of good luck because it was traditionally made of iron, which was believed to ward off evil spirits.",
+    "According to a study, people who believe in luck are more likely to notice and benefit from unexpected opportunities.",
+    "The phrase 'break a leg' is a common way to wish someone good luck in the theatre world.",
+    "In some cultures, it is considered lucky to wear a certain color, such as red or green.",
+    "Finding a four-leaf clover is considered lucky because the chances of finding one are estimated to be 1 in 10,000.",
+    "Some people believe that carrying a rabbit's foot or a lucky coin can bring good luck.",
+    "In Western cultures, it is believed that seeing a shooting star is a sign of good luck.",
+    "The lucky cat statue, or maneki-neko, is a popular symbol of good luck in Japanese and Chinese cultures.",
+    "In Hinduism, elephants are considered lucky animals and are often used as symbols of good fortune.",
+    "In some cultures, it is considered lucky to throw coins into a well or fountain.",
+    "The Irish believe that finding a horseshoe brings good luck, but it must be pointing upwards to prevent the luck from running out.",
+    "Some people believe that carrying a ladybug in your pocket can bring good luck.",
+    "In Korean culture, the number 3 is considered lucky because it represents heaven, earth, and humanity.",
+    "Gamblers may carry a lucky charm or perform a lucky ritual, such as blowing on dice or rubbing a rabbit's foot, to improve their chances of winning.",
+    "Many cultures believe that Friday the 13th is an unlucky day, while others believe that it is a lucky day for taking risks and making bold decisions.",
+    "In many cultures, it is believed that a black cat crossing your path is a sign of bad luck.",
+    "In Ancient Egypt, the scarab beetle was considered a symbol of luck and rebirth.",
+    "The expression 'knock on wood' is a superstitious way of preventing bad luck.",
+    "In some cultures, it is considered lucky to have a bird poop on you, as it is believed to bring good fortune and wealth.",
+    "In Chinese culture, the number 9 is considered lucky because it sounds similar to the word for longevity or eternity.",
+    "Studies show that people who believe in luck are more likely to win at rock-paper-scissors.",
+    "Some people believe that folding your arms into an X shape before playing rock-paper-scissors can bring good luck.",
+    "In Japan, there is a version of rock-paper-scissors called 'jan-ken-pon' that is said to have originated from a hand game played by samurai warriors.",
+    "Rock-paper-scissors is often used as a tiebreaker in competitive sports and tournaments.",
+    "In South Korea, there is a televised rock-paper-scissors tournament with a cash prize of $50,000.",
+    "The World RPS Society was founded in 1918 to promote the game of rock-paper-scissors.",
+    "In some versions of rock-paper-scissors, players can use additional hand gestures or symbols, such as a lizard or Spock.",
+    "In Chinese culture, rock-paper-scissors is sometimes used as a way to make decisions or settle disputes.",
+    "The longest game of rock-paper-scissors on record lasted for 101 rounds.",
+    "In some versions of rock-paper-scissors, players can shout a phrase or word along with their gesture, such as 'rock, paper, scissors, shoot!'",
+    "In some cultures, it is believed that if you walk under a ladder, you will have bad luck.",
+    "Breaking a mirror is considered to be bad luck and is said to bring seven years of bad luck.",
+    "Many people believe that knocking on wood brings good luck. This superstition dates back to ancient times when people believed that spirits lived in trees, and knocking on wood was a way to ask for their protection.",
+    "Some people believe that if you see a shooting star and make a wish, it will come true.",
+    "In Chinese culture, the number eight is considered lucky because it sounds similar to the word for wealth and prosperity.",
+    "It is believed that horseshoes bring good luck, and that hanging a horseshoe over a door can protect a household from evil spirits.",
+    "Some people believe that crossing your fingers brings good luck, and that it originated from early Christianity, where people would cross their fingers to ward off evil.",
+    "Black cats are often considered to be unlucky, but in some cultures, such as Japan, they are believed to bring good luck.",
+    "In many cultures, it is believed that finding a penny on the ground brings good luck.",
+    "It is believed that blowing out all the candles on your birthday cake in one breath will bring good luck and make your wish come true.",
+    "This variation of rock-paper-scissors was first introduced in the TV show 'The Big Bang Theory'.",
+    "The game was created by Sam Kass and Karen Bryla.",
+    "The five options in this game are inspired by characters and objects from the TV show 'Star Trek'.",
+    "The lizard and spock options were added to make the game more complex and reduce the likelihood of ties.",
+    "In this variation, paper disproves spock by covering it, and spock smashes scissors because it is more advanced.",
+    "In the game, lizard poisons Spock by licking it, and rock crushes lizard because it is heavier.",
+    "The rock-paper-scissors-lizard-spock game has become popular in many online communities and is often used as a way to make decisions or settle disputes.",
+    "There are many online versions of this game available, and some even include animations and sound effects to make the experience more fun.",
+    "Playing rock-paper-scissors-lizard-spock can improve your decision-making skills and your ability to predict and outsmart your opponents."  
+  ];
 function rockclick(){
     gameval=1
     finalbotval = botvalgen();
@@ -151,3 +212,16 @@ function resetFn(){
     dispBotRes.innerHTML="Bot is sleeping..."
     handicon.removeChild(icon);
 }
+function changeTheme(){
+    body.style.backgroundColor = themeColours[themeColourIncrement];
+    themeColourIncrement++;
+    if (themeColourIncrement==themeColours.length) {
+        themeColourIncrement = 0;
+    }
+}
+function luckFactGenerator(){
+
+    luckFactPara.innerHTML=luckFactArray[Math.floor(Math.random()*luckFactArray.length)]
+}
+luckFactGenerator();
+console.log(luckFactArray[2])
