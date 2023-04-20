@@ -56,6 +56,8 @@ p{
 }
 .handicon{
     font-size: 40px;
+    display: flex;
+    justify-content: space-around;
 }
 .reswrapper{
     height: 220px;
