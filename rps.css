@@ -58,6 +58,8 @@ p{
     font-size: 40px;
     display: flex;
     justify-content: space-around;
+    width: 120px;
+    margin: auto;
 }
 .reswrapper{
     height: 220px;
