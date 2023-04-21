@@ -150,8 +150,8 @@ button:focus {
         padding: 10px;
     }
     .gamebtn{
-        width: 62px;
-        height: 62px;
+        width: 65px;
+        height: 65px;
         font-size: 25px
     }
     .resetbtn{
@@ -160,7 +160,7 @@ button:focus {
         height: 70px;
         border: none;
         border-radius: 7px;
-        font-size: 25px
+        font-size: 20px
     }
     .scoresection{
         font-size: 18px;
@@ -170,5 +170,8 @@ button:focus {
     }
     .botresult{
         font-size: 20px;
+    }
+    .btnwraper{
+        padding-left: 8px;
     }
 }
