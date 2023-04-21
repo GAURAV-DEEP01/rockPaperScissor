@@ -11,6 +11,7 @@ body=document.querySelector("body")
 playerScoreCounter=document.querySelector("#playerScoreCount")
 botScoreCounter=document.querySelector("#botScoreCount")
 resetgamebtn=document.querySelector(".resetbtn")
+copyFactsBtn=document.querySelector("#copyFacts")
 handicon=document.querySelector(".handicon")
 icon = document.createElement("i");
 
@@ -20,6 +21,8 @@ paperbtn.addEventListener("click",paperclick);
 scissorbtn.addEventListener("click",scissorclick);
 resetgamebtn.addEventListener("click",resetFn)
 themeColor.addEventListener("click",changeTheme)
+copyFactsBtn.addEventListener("click",copyTheFact)
+
 
 let botChoiceValue;
 let playerScoreIncrement = 0;
@@ -240,8 +243,18 @@ function changeTheme(){
     }
 }
 function luckFactGenerator(){
-
     luckFactPara.innerHTML=luckFactArray[Math.floor(Math.random()*luckFactArray.length)]
 }
 luckFactGenerator();
-console.log(luckFactArray[2])
+function copyTheFact() {
+    const text = luckFactPara.textContent;
+    copyTextToClipboard(text);
+  }
+  function copyTextToClipboard(text) {
+    const textarea = document.createElement('textarea');
+    textarea.value = text;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textarea);
+  }
