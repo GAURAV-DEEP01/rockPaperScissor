@@ -63,6 +63,7 @@ th,td{
     padding-left: 20px;
     padding-right: 20px;
     border: none;
+    background-color: #FFFFF3;
 }
 p{
     margin: 0%;
@@ -90,8 +91,7 @@ p{
     height: 220px;
 }
 .gamebtn{
-    background-color:#FFFFF3
-;
+    background-color:#FFFFF3;
     width: 120px;
     min-width: 30px;
     height: 70px;
