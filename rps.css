@@ -117,7 +117,7 @@ button:focus {
 .luckFacts{
     margin: 8px;
     padding: 20px;
-    background-color:#FFFFF3 ;
+    background-color: #ededed ;
     border-radius: 7px;
 }
 .luckFactsBtn{
@@ -136,7 +136,7 @@ button:focus {
 }
 #copyFacts{
     padding: 5px;
-    background-color: #ededed ; 
+    background-color: #98989839 ; 
     border-radius: 5px;
 }
 
