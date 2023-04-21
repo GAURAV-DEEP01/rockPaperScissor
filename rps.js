@@ -12,6 +12,7 @@ body=document.querySelector("body")
 playerScoreCounter=document.querySelector("#playerScoreCount")
 botScoreCounter=document.querySelector("#botScoreCount")
 resetgamebtn=document.querySelector(".resetbtn")
+timer=document.querySelector(".timer")
 copyFactsBtn=document.querySelector("#copyFacts")
 handicon=document.querySelector(".handicon")
 icon = document.createElement("i");
@@ -264,3 +265,28 @@ function copyTheFact() {
     document.execCommand('copy');
     document.body.removeChild(textarea);
   }
+ let sec = 0;
+ let min =0;
+  function start(){
+setTimeout(()=> {
+    
+    if (sec==60)
+    {
+        min++
+        sec=0
+    }
+    if (sec<10) {
+        timer.innerHTML=min+":0"+sec  
+    }
+    else{
+    timer.innerHTML= min+":"+sec  
+    }
+    sec++
+    start()
+},1000)
+}
+start()
+function resetTimer(){
+    sec=0
+    min=0
+}
