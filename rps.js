@@ -7,6 +7,7 @@ dispBotRes=document.querySelector(".botresult")
 luckFact=document.querySelector(".luckFacts")
 luckFactPara=document.querySelector(".luckFactsPara")
 themeColor=document.querySelector(".themeColour")//useless
+scoreSection=document.querySelector(".scoresection")//useless
 body=document.querySelector("body")
 playerScoreCounter=document.querySelector("#playerScoreCount")
 botScoreCounter=document.querySelector("#botScoreCount")
@@ -30,8 +31,11 @@ let botScoreIncrement = 0;
 let gameval;
 var finalbotval;
 let botIconValue;
-let themeColourIncrement = 0;
+let themeColourIncrement = 0,themeColourIncrement2= 0;
 let themeColours = ["#FFEECF","#FF9FE5","#FF858D","#00D9C0","#9A8873","#77BA99"];
+let themeColours2 =["#FADCD9", "#FFB2D9", "#FFC9A9", "#B8E6D9", "#EAD6B3", "#C8E6C9"]
+
+
 let luckFactArray = [
     "In Japan, the number 4 is considered unlucky because it is pronounced similarly to the word for death.",
     "In Chinese culture, the number 8 is considered lucky because it sounds like the word for wealth or fortune.",
@@ -237,6 +241,8 @@ function resetFn(){
 }
 function changeTheme(){
     body.style.backgroundColor = themeColours[themeColourIncrement];
+    scoreSection.style.backgroundColor = themeColours2[themeColourIncrement];
+    luckFact.style.backgroundColor = themeColours2[themeColourIncrement];
     themeColourIncrement++;
     if (themeColourIncrement==themeColours.length) {
         themeColourIncrement = 0;
