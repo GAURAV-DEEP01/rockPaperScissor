@@ -139,7 +139,11 @@ button:focus {
     background-color: #98989839 ; 
     border-radius: 5px;
 }
-
+#copyFacts:hover{
+    background-color: #5d5d5d39 ; 
+    border: solid 1px;
+    border-color: #8f8e8e;
+}
 @media (max-width:700px) {
     .gamesection{
         flex-basis: 90%;
