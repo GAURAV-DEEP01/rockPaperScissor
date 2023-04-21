@@ -41,6 +41,29 @@ th,td{
     justify-content: space-around;
     margin-top: 20vh;
 }
+.gameTimer{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+
+}
+#timerIcon{
+    padding-bottom: 0%;
+    margin: auto;
+}
+.timer{
+    text-align: left;
+    width: 45%;
+}
+.resetTimeBtn{
+    border-radius: 7px;
+    padding: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+}
 p{
     margin: 0%;
 }
@@ -83,18 +106,21 @@ button:focus {
 .resetbtn{
     background-color:#FFFFF3;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 5px;
     height: 70px;
     border: none;
     border-radius: 7px;
     font-size: 25px
 }
-.gamebtn:hover,.resetbtn:hover{
+.gamebtn:hover{
     background-color:#e9e9e6 ;
-    border: solid 4px;
+    border: solid 3px;
     border-color: #bbbbba;  
 }
-
+.resetTimeBtn:hover,.resetbtn:hover{
+    background-color:#dadada ;
+ 
+}
 .nextprojsection{
     display: flex;
     flex-direction: column;
@@ -103,7 +129,7 @@ button:focus {
     width: 100%;
     text-align: center;
     font-size: 14px;
-    margin-top: 50px;
+    margin-top: 30px;
     background-color:#FFFFF3 ;
     border-radius: 7px;
     border: none;
@@ -111,7 +137,7 @@ button:focus {
     text-decoration: none;
 }
 .themeColour{
-    margin-top:20px;
+    margin-top:15px;
     padding-top: 15px;
 }
 .luckFacts{
@@ -186,5 +212,13 @@ button:focus {
     }
     .btnwraper{
         padding-left: 8px;
+        margin-top: 20vh;
+    }
+    .resetTimeBtn{
+        border-radius: 7px;
+        padding: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border: none;
     }
 }
