@@ -130,6 +130,15 @@ button:focus {
     font-size: 13px;
     color: #676767;
 }
+.luclAndCpy{
+    display: flex;
+    justify-content: space-between;
+}
+#copyFacts{
+    padding: 5px;
+    background-color: #ededed ; 
+    border-radius: 5px;
+}
 
 @media (max-width:700px) {
     .gamesection{
