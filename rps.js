@@ -142,15 +142,15 @@ function botChoice(){
     switch(finalbotval)
     {
         case 1: botChoiceValue ="Rock"
-                botIconValue="fa-sharp fa-solid fa-hand-back-fist"
+                botIconValue="fa-sharp fa-solid fa-hand-back-fist fa-beat"
                 addicon()
                 break;
         case 2: botChoiceValue ="Paper"
-                botIconValue="fa-sharp fa-solid fa-hand"
+                botIconValue="fa-sharp fa-solid fa-hand fa-beat"
                 addicon()
                 break
         case 3: botChoiceValue ="Scissors"
-                botIconValue="fa-sharp fa-solid fa-hand-scissors"
+                botIconValue="fa-sharp fa-solid fa-hand-scissors fa-beat"
                 addicon()
                 break
         default: none;
