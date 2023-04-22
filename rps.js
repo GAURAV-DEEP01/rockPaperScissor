@@ -1,4 +1,3 @@
-
 rockbtn=document.querySelector("#rk")
 paperbtn=document.querySelector("#ppr")
 scissorbtn=document.querySelector("#scr")
@@ -8,6 +7,7 @@ luckFact=document.querySelector(".luckFacts")
 luckFactPara=document.querySelector(".luckFactsPara")
 themeColor=document.querySelector(".themeColour")//useless
 scoreSection=document.querySelector(".scoresection")//useless
+navbar=document.querySelector(".navbar")//useless
 body=document.querySelector("body")
 playerScoreCounter=document.querySelector("#playerScoreCount")
 botScoreCounter=document.querySelector("#botScoreCount")
@@ -35,6 +35,7 @@ let botIconValue;
 let themeColourIncrement = 0,themeColourIncrement2= 0;
 let themeColours = ["#FFEECF","#FF9FE5","#FF858D","#00D9C0","#9A8873","#77BA99"];
 let themeColours2 =["#FADCD9", "#FFB2D9", "#FFC9A9", "#B8E6D9", "#EAD6B3", "#C8E6C9"]
+let themeColours3 =["#F5D5D2", "#FFA1CD", "#FFC09F", "#93D1CD", "#D8C790", "#B1D9C0"]
 
 
 let luckFactArray = [
@@ -244,6 +245,7 @@ function changeTheme(){
     body.style.backgroundColor = themeColours[themeColourIncrement];
     scoreSection.style.backgroundColor = themeColours2[themeColourIncrement];
     luckFact.style.backgroundColor = themeColours2[themeColourIncrement];
+    navbar.style.backgroundColor = themeColours3[themeColourIncrement];
     themeColourIncrement++;
     if (themeColourIncrement==themeColours.length) {
         themeColourIncrement = 0;
