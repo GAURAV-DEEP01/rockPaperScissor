@@ -126,9 +126,16 @@ p{
 }
 .reswrapper{
     height: 45%;
+    background-color: #00d7be;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding: 10px;
+    margin: 10px;
+    padding-bottom: 30px;
+    border-radius: 7px;
+    border: solid 5px;
+    border-color: #00000015;
 }
 .gamebtn{
     background-color:#FFFFF3;
@@ -261,7 +268,7 @@ button:focus {
     }
     .btnwraper{
         padding-left: 8px;
-        margin-top: 10vh;
+        margin-top: 0vh;
     }
     .resetTimeBtn{
         border-radius: 7px;
