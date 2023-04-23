@@ -5,7 +5,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family:'Poppins', sans-serif;
-    
+    padding: 0%;
+    margin: 0%;
 }
 .navbar {
     display: flex;
@@ -35,18 +36,23 @@
 .container{
     display: flex;
     height: auto;
+    margin-top: 10px;
 }
 body {
     background-color:#00D9C0
   }
 .gamesection{
     flex-basis: 80%;
+    border-radius: 7px;
+    margin-left: 8px;
+    margin-right: 8px;
+    background-color: #B8E6D9;
+
 }
 .scoresection{
     flex-basis: 20%;
     padding: 10px;
-    margin: auto;
-    margin-top: 30px;
+    /* margin: auto; */
     margin-left: 8px;
     font-size: 25px;
     background-color:#B8E6D9;
@@ -64,8 +70,10 @@ th,td{
 .btnwraper{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 20vh;
+    margin-bottom: 20px;
 }
 .gameTimer{
     text-align: center;
@@ -97,11 +105,12 @@ p{
 .gameresult,.botresult,.handicon{
  display: flex;
  justify-content: center;
- margin: 30px;
+ margin: 10px;
 }
 .gameresult{
     font-size: 40px;
-    border-radius: 7px;   
+    border-radius: 7px;
+    margin-top: 15px;   
 }
 .botresult{
     font-size: 30px;
@@ -112,6 +121,7 @@ p{
     justify-content: space-around;
     width: 120px;
     margin: auto;
+    margin-top: 60px;
 }
 .reswrapper{
     height: 220px;
@@ -148,7 +158,7 @@ button:focus {
  
 }
 .nextprojsection{
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
 }
 .nextProject,.themeColour{
@@ -201,15 +211,20 @@ button:focus {
         padding: 0.7rem;
       }
     .gamesection{
-        flex-basis: 90%;
-        margin-right:8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
     }
     .scoresection{
-        margin-top: 20px;
         margin-left: 8px;
         padding: 10px;
         flex-basis: 10%;
+        height: 100%;
         margin-right: 0%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
     }
     ul{
         padding: 0%;
@@ -218,9 +233,10 @@ button:focus {
         padding: 10px;
     }
     .gamebtn{
-        width: 60px;
-        height: 60px;
-        font-size: 25px
+        width: 75px;
+        height: 75px;
+        font-size: 25px;
+        margin: 5px;
     }
     .resetbtn{
         background-color:#FFFFF3;
@@ -241,7 +257,7 @@ button:focus {
     }
     .btnwraper{
         padding-left: 8px;
-        margin-top: 20vh;
+        margin-top: 10vh;
     }
     .resetTimeBtn{
         border-radius: 7px;
