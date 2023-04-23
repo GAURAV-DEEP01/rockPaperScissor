@@ -125,7 +125,7 @@ p{
    
 }
 .reswrapper{
-    height: 45%;
+    height: auto;
     background-color: #00d7be;
     display: flex;
     flex-direction: column;
@@ -135,7 +135,7 @@ p{
     padding-bottom: 30px;
     border-radius: 7px;
     border: solid 5px;
-    border-color: #00000015;
+    border-color: #00000011;
 }
 .gamebtn{
     background-color:#FFFFF3;
@@ -261,10 +261,11 @@ button:focus {
         font-size: 18px;
     }
     .gameresult{
-        font-size: 30px;
+        font-size: 25px;
+        padding: 5px;
     }
     .botresult{
-        font-size: 20px;
+        font-size: 18px;
     }
     .btnwraper{
         padding-left: 8px;
