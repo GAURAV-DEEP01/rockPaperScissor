@@ -7,6 +7,7 @@ luckFact=document.querySelector(".luckFacts")
 luckFactPara=document.querySelector(".luckFactsPara")
 themeColor=document.querySelector(".themeColour")//useless
 scoreSection=document.querySelector(".scoresection")//useless
+gameSection=document.querySelector(".gamesection")//useless
 navbar=document.querySelector(".navbar")//useless
 body=document.querySelector("body")
 playerScoreCounter=document.querySelector("#playerScoreCount")
@@ -245,6 +246,8 @@ function changeTheme(){
     body.style.backgroundColor = themeColours[themeColourIncrement];
     scoreSection.style.backgroundColor = themeColours2[themeColourIncrement];
     luckFact.style.backgroundColor = themeColours2[themeColourIncrement];
+    gameSection.style.backgroundColor = themeColours2[themeColourIncrement];
+
     navbar.style.backgroundColor = themeColours3[themeColourIncrement];
     themeColourIncrement++;
     if (themeColourIncrement==themeColours.length) {
