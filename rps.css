@@ -114,6 +114,7 @@ p{
 }
 .botresult{
     font-size: 30px;
+    height: 100px;
 }
 .handicon{
     font-size: 40px;
@@ -124,10 +125,10 @@ p{
     margin-top: 60px;
 }
 .reswrapper{
-    height: 220px;
+    height: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .gamebtn{
     background-color:#FFFFF3;
