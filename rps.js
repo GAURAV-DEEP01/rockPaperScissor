@@ -35,9 +35,9 @@ let gameval;
 var finalbotval;
 let botIconValue;
 let themeColourIncrement = 0,themeColourIncrement2= 0;
-let themeColours = ["#FFEECF","#FF858D","#9A8873","#77BA99","#E5B598","#D69FA2","#C7C7C7"," #EAEAEF","#87CEEB","#00D9C0"];
-let themeColours2 =["#FADCD9", "#FFC9A9", "#EAD6B3", "#C8E6C9","#FEE9D4","#E8D5E5","#BFD6D9","#FFF8E7","#B0E0E6","#B8E6D9"]
-let themeColours3 =["#F5D5D2", "#FFC09F", "#D8C790", "#B1D9C0","#D7896D","#BA7F83","#C9C9C9"," #F4F3F4","#6495ED","#93D1CD"]
+let themeColours = ["#FFEECF","#FF858D","#9A8873","#77BA99","#E5B598","#D69FA2","#C7C7C7"," #EAEAEF","#00D9C0"];
+let themeColours2 =["#FADCD9", "#FFC9A9", "#EAD6B3", "#C8E6C9","#FEE9D4","#E8D5E5","#BFD6D9","#FFF8E7","#B8E6D9"]
+let themeColours3 =["#F5D5D2", "#FFC09F", "#D8C790", "#B1D9C0","#D7896D","#BA7F83","#C9C9C9"," #F4F3F4","#93D1CD"]
 let luckFactArray = [
     "In Japan, the number 4 is considered unlucky because it is pronounced similarly to the word for death.",
     "In Chinese culture, the number 8 is considered lucky because it sounds like the word for wealth or fortune.",
