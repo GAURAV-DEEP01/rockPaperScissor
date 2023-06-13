@@ -227,8 +227,7 @@ button:focus {
 }
 #copyFacts:hover{
     background-color: #5d5d5d39 ; 
-    border: solid 1px;
-    border-color: #8f8e8e;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 @media (max-width:700px) {
     .navbar {
